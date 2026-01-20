@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VA Income Tax Service | Veronica Alcaraz</title>
+    
+    <!-- Dynamic Animated Favicon Support -->
+    <link id="dynamic-favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232563eb%22/><text y=%2250%%22 x=%2250%%22 font-family=%22sans-serif%22 font-weight=%22800%22 font-size=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22>VA</text></svg>">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -437,29 +441,34 @@
     <section class="py-32 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
             <div class="reveal contact-card bg-slate-900 rounded-[4rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-                <div class="w-full lg:w-1/2 bg-gradient-to-br from-blue-700 to-indigo-900 p-16 text-white">
-                    <div class="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mb-12 border border-white/20">
-                        <span class="text-3xl font-black">VA</span>
+                <div class="w-full lg:w-1/2 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 p-16 text-white relative">
+                    <div class="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-12 shadow-xl">
+                        <!-- Standardized SVG Brand Logo -->
+                        <svg width="45" height="38" viewBox="0 0 120 100" fill="none">
+                            <path d="M20 20L50 85L65 55" stroke="#a855f7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M45 85L75 20L105 85" stroke="#3b82f6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h2 class="text-5xl font-black mb-4 uppercase tracking-tighter">Veronica<br/>Alcaraz</h2>
-                    <p class="text-xs font-black tracking-[0.4em] uppercase text-blue-200 mt-6" data-i18n="card-title">Registered Tax Return Preparer</p>
+                    <h2 class="text-5xl font-black mb-4 uppercase tracking-tighter italic">Veronica<br/>Alcaraz</h2>
+                    <p class="text-xs font-black tracking-[0.4em] uppercase text-blue-300 mt-6" data-i18n="card-title">Registered Tax Return Preparer</p>
+                    <div class="absolute bottom-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] pointer-events-none"></div>
                 </div>
 
-                <div class="w-full lg:w-1/2 p-16 bg-white space-y-12">
+                <div class="w-full lg:w-1/2 p-16 bg-white space-y-12 border-l border-slate-100">
                     <div>
-                        <h3 class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-2" data-i18n="card-email-label">Professional Email</h3>
-                        <a href="mailto:incometax.alcaraz@gmail.com" class="text-2xl lg:text-3xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
+                        <h3 class="text-[10px] font-black text-blue-600 uppercase tracking-[0.3em] mb-4" data-i18n="card-email-label">Professional Email</h3>
+                        <a href="mailto:incometax.alcaraz@gmail.com" class="text-2xl lg:text-3xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors tracking-tight">
                             incometax.alcaraz@gmail.com
                         </a>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-100 pt-12">
-                        <div>
+                        <div class="group">
                             <h3 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2" data-i18n="card-office-label">Office Line</h3>
-                            <a href="tel:6305546904" class="text-2xl font-black text-slate-900 hover:text-blue-600">(630) 554-6904</a>
+                            <a href="tel:6305546904" class="text-2xl font-black text-slate-900 group-hover:text-blue-600 transition-colors">(630) 554-6904</a>
                         </div>
-                        <div>
+                        <div class="group">
                             <h3 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2" data-i18n="card-cell-label">Direct Cell</h3>
-                            <a href="tel:6307082377" class="text-2xl font-black text-slate-900 hover:text-purple-600">(630) 708-2377</a>
+                            <a href="tel:6307082377" class="text-2xl font-black text-slate-900 group-hover:text-purple-600 transition-colors">(630) 708-2377</a>
                         </div>
                     </div>
                 </div>
@@ -484,6 +493,20 @@
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
     <script>
+        // --- Animated Dynamic Favicon Logic ---
+        const favicon = document.getElementById('dynamic-favicon');
+        let hue = 220; // Start at Blue
+        
+        function updateFavicon() {
+            // Cycle between 220 (blue) and 270 (purple)
+            hue = 220 + Math.sin(Date.now() / 2000) * 25;
+            const color = `hsl(${hue}, 70%, 50%)`;
+            const svg = `<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22${encodeURIComponent(color)}%22/><text y=%2250%%22 x=%2250%%22 font-family=%22sans-serif%22 font-weight=%22800%22 font-size=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22>VA</text></svg>`;
+            favicon.href = `data:image/svg+xml,${svg}`;
+            requestAnimationFrame(updateFavicon);
+        }
+        updateFavicon();
+
         const translations = {
             en: {
                 "comp-efile": "Professional Tax Preparer RTRP Since 1996",
