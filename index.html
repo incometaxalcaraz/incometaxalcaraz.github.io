@@ -35,7 +35,6 @@
 
         .font-bienvenidos { font-family: 'Bienvenidos', 'Alex Brush', cursive; }
 
-        /* Custom Floating Animation */
         @keyframes float {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-20px) rotate(2deg); }
@@ -69,7 +68,6 @@
             100% { background-position: 200% center; }
         }
 
-        /* Language Toggle UI */
         .lang-switch {
             position: relative;
             background: #f1f5f9;
@@ -103,7 +101,6 @@
         }
         .lang-switch.en .opt-en, .lang-switch.es .opt-es { color: var(--brand-blue); }
 
-        /* Glass Container for Calendly - UNTOUCHED EMBED LOGIC */
         .glass-container {
             background: rgba(10, 10, 10, 0.98);
             backdrop-filter: blur(25px);
@@ -157,7 +154,6 @@
             color: #f8fafc;
         }
 
-        /* Paper Stack Animation */
         .paper-anim-container {
             width: 100%;
             max-width: 300px;
@@ -246,7 +242,6 @@
             100% { stroke-dashoffset: 0; opacity: 0; }
         }
 
-        /* Hover Card Effect */
         .contact-card {
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -272,7 +267,7 @@
 
     <!-- Compliance Bar -->
     <div class="fixed top-0 w-full z-[60] compliance-banner uppercase tracking-widest text-[8px] md:text-[10px]">
-        <span data-i18n="comp-efile">No E-Filing Available • Paper Returns Only • Securing Financial Documentation Since 1996</span>
+        <span data-i18n="comp-efile">No E-Filing Available • Paper Returns Only • Professional Tax Preparer RTRP Since 2006</span>
     </div>
 
     <!-- Header -->
@@ -307,7 +302,6 @@
 
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 lg:pt-20 hero-gradient overflow-hidden">
-        <!-- Floating BG Decor -->
         <div class="absolute top-1/4 -left-20 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl animate-float"></div>
         <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl animate-float" style="animation-delay: -2s;"></div>
 
@@ -320,11 +314,11 @@
                 
                 <h1 class="reveal hero-title text-[50px] md:text-[80px] lg:text-[100px] font-black mb-8 tracking-tighter text-slate-900 leading-[0.85] italic">
                     <span data-i18n="hero-title-1">Professional Tax</span> <br/>
-                    <span class="shimmer-text" data-i18n="hero-title-2">Documentation.</span>
+                    <span class="shimmer-text" data-i18n="hero-title-2">Preparation.</span>
                 </h1>
 
                 <p class="reveal hero-desc text-lg lg:text-2xl text-slate-500 mb-12 max-w-2xl font-medium leading-relaxed" data-i18n="hero-desc">
-                    Authorized preparation for corporate and individual returns. <br class="hidden md:block"/>Processed via secure, compliant physical paper submission protocols.
+                    Registered Tax Return Preparer (RTRP) authorized for corporate and individual returns. Processed via secure, compliant physical paper submission protocols.
                 </p>
 
                 <div class="reveal flex flex-col md:flex-row gap-5">
@@ -373,7 +367,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12">
-                <!-- Card 1 -->
                 <div class="reveal group bg-slate-50 p-10 lg:p-14 rounded-[3rem] border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500">
                     <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center mb-10 group-hover:bg-blue-600 group-hover:rotate-[10deg] transition-all">
                         <i class="fa-solid fa-building-columns text-2xl text-blue-600 group-hover:text-white"></i>
@@ -382,7 +375,6 @@
                     <p class="text-slate-500 text-lg leading-relaxed font-medium" data-i18n="srv-corp-d">Expert preparation for S-Corps, LLCs, and small business paper filings.</p>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="reveal group bg-slate-50 p-10 lg:p-14 rounded-[3rem] border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500" style="transition-delay: 100ms;">
                     <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center mb-10 group-hover:bg-purple-600 group-hover:rotate-[-10deg] transition-all">
                         <i class="fa-solid fa-user-tie text-2xl text-purple-600 group-hover:text-white"></i>
@@ -391,7 +383,6 @@
                     <p class="text-slate-500 text-lg leading-relaxed font-medium" data-i18n="srv-ind-d">Detailed individual return preparation focused on accuracy and regulatory compliance.</p>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="reveal group bg-slate-50 p-10 lg:p-14 rounded-[3rem] border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500" style="transition-delay: 200ms;">
                     <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center mb-10 group-hover:bg-amber-600 group-hover:rotate-[15deg] transition-all">
                         <i class="fa-solid fa-stamp text-2xl text-amber-600 group-hover:text-white"></i>
@@ -400,7 +391,6 @@
                     <p class="text-slate-500 text-lg leading-relaxed font-medium">Verified authentication for legal, financial, and tax-related documents.</p>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="reveal group bg-slate-50 p-10 lg:p-14 rounded-[3rem] border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500" style="transition-delay: 300ms;">
                     <div class="w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center mb-10 group-hover:bg-emerald-600 group-hover:rotate-[-15deg] transition-all">
                         <i class="fa-solid fa-file-contract text-2xl text-emerald-600 group-hover:text-white"></i>
@@ -412,7 +402,7 @@
         </div>
     </section>
 
-    <!-- Booking UI - UNTOUCHED EMBED -->
+    <!-- Booking UI -->
     <section id="booking-section" class="py-24 lg:py-48 bg-slate-900 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
             <div class="text-center mb-16 lg:mb-24">
@@ -441,15 +431,13 @@
         </div>
     </section>
 
-    <!-- Professional Identity Card - REWORKED PHONES -->
+    <!-- Professional Identity Card -->
     <section class="py-24 lg:py-48 bg-white relative overflow-hidden">
-        <!-- Abstract BG Shapes -->
         <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-50 -skew-x-12 translate-x-1/4 -z-10"></div>
         
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
             <div class="reveal contact-card bg-slate-900 rounded-[3rem] lg:rounded-[5rem] overflow-hidden flex flex-col lg:flex-row shadow-3xl relative">
                 
-                <!-- Left Content -->
                 <div class="w-full lg:w-1/2 bg-gradient-to-br from-blue-700 via-blue-800 to-indigo-950 p-12 lg:p-24 text-white flex flex-col justify-between relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
                     
@@ -471,7 +459,6 @@
                     </div>
                 </div>
 
-                <!-- Right Content (Phone Numbers) -->
                 <div class="w-full lg:w-1/2 p-12 lg:p-24 bg-white flex flex-col justify-center space-y-16">
                     <div class="group">
                         <h3 class="text-[10px] lg:text-[12px] font-black text-blue-600 uppercase tracking-[0.3em] mb-4 flex items-center gap-2" data-i18n="card-email-label">
@@ -495,7 +482,7 @@
                             <h3 class="text-[10px] lg:text-[12px] font-black text-slate-400 uppercase tracking-widest mb-4 flex items-center gap-2" data-i18n="card-cell-label">
                                 <i class="fa-solid fa-mobile-screen-button text-purple-400"></i> Direct Cell
                             </h3>
-                            <a href="tel:6307082377" class="text-slate-900 font-black text-3xl md:text-4xl lg:text-5xl tracking-tight group-hover:text-purple-600 transition-colors decoration-purple-500/0 hover:decoration-purple-500/30 underline underline-offset-8">
+                            <a href="tel:6307082377" class="text-slate-900 font-black text-3xl md:text-4xl lg:text-5xl tracking-tight group-hover:text-purple-600 transition-colors decoration-blue-500/0 hover:decoration-blue-500/30 underline underline-offset-8">
                                 (630) 708-2377
                             </a>
                         </div>
@@ -542,14 +529,14 @@
     <script>
         const translations = {
             en: {
-                "comp-efile": "No E-Filing Available • Paper Returns Only • Securing Financial Documentation Since 2006",
+                "comp-efile": "No E-Filing Available • Paper Returns Only • Professional Tax Preparer RTRP Since 2006",
                 "header-tagline": "Veronica Alcaraz",
                 "nav-portal": "Client Portal", 
                 "nav-login": "Login",
                 "hero-tag": "Registered Tax Return Preparer", 
                 "hero-title-1": "Professional Tax", 
-                "hero-title-2": "Documentation.",
-                "hero-desc": "Authorized preparation for corporate and individual returns. All filings processed via secure, compliant paper submission protocols.",
+                "hero-title-2": "Preparation.",
+                "hero-desc": "Registered Tax Return Preparer (RTRP) authorized for corporate and individual returns. All filings processed via secure, compliant paper submission protocols.",
                 "learn-more": "Expertise & Services",
                 "btn-schedule": "Schedule Appointment",
                 "exp-title": "Compliant Preparation.",
@@ -569,14 +556,14 @@
                 "legal-disclaimer": "<p>Veronica Alcaraz is a Registered Tax Return Preparer (RTRP). The IRS does not endorse any particular individual tax return preparer.</p><p class='bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-500'><strong class='text-slate-900 block mb-2'>NO E-FILING:</strong> This practice specializes exclusively in paper filing preparation. We do not provide electronic submission services (e-file). All returns are prepared for physical mailing to the respective revenue agencies.</p>"
             },
             es: {
-                "comp-efile": "Sin Envío Electrónico • Solo Declaraciones en Papel • Desde 2006",
+                "comp-efile": "Sin Envío Electrónico • Solo Declaraciones en Papel • Preparador Profesional RTRP desde 2006",
                 "header-tagline": "Verónica Alcaraz",
                 "nav-portal": "Portal Clientes", 
                 "nav-login": "Acceso",
                 "hero-tag": "Preparador de Impuestos Registrado", 
-                "hero-title-1": "Documentación", 
+                "hero-title-1": "Preparación", 
                 "hero-title-2": "Fiscal Profesional.",
-                "hero-desc": "Preparación autorizada para empresas e individuos. Todos los trámites se procesan mediante protocolos físicos de papel.",
+                "hero-desc": "Preparador de Impuestos Registrado (RTRP) autorizado para empresas e individuos. Todos los trámites se procesan mediante protocolos físicos de papel.",
                 "learn-more": "Experiencia y Servicios",
                 "btn-schedule": "Programar Cita",
                 "exp-title": "Preparación Conforme.",
