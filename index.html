@@ -154,7 +154,6 @@
             color: #f8fafc;
         }
 
-        /* Animated SVGs for Tax Concepts */
         .tax-svg-container {
             width: 64px;
             height: 64px;
@@ -164,19 +163,9 @@
             margin-bottom: 2.5rem;
         }
 
-        @keyframes draw-path {
-            to { stroke-dashoffset: 0; }
-        }
-
-        @keyframes write-anim {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(3px, -3px); }
-        }
-
-        @keyframes pulse-security {
-            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px #3b82f6); }
-            50% { transform: scale(1.05); filter: drop-shadow(0 0 10px #3b82f6); }
-        }
+        @keyframes draw-path { to { stroke-dashoffset: 0; } }
+        @keyframes write-anim { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(3px, -3px); } }
+        @keyframes pulse-security { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px #3b82f6); } 50% { transform: scale(1.05); filter: drop-shadow(0 0 10px #3b82f6); } }
 
         .paper-anim-container {
             width: 100%;
@@ -266,13 +255,8 @@
             100% { stroke-dashoffset: 0; opacity: 0; }
         }
 
-        .contact-card {
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .contact-card:hover {
-            transform: scale(1.02) translateY(-10px);
-            box-shadow: 0 40px 80px -15px rgba(0,0,0,0.4);
-        }
+        .contact-card { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .contact-card:hover { transform: scale(1.02) translateY(-10px); box-shadow: 0 40px 80px -15px rgba(0,0,0,0.4); }
 
         @media (max-width: 768px) {
             .hero-title { font-size: 42px !important; line-height: 1 !important; }
@@ -334,7 +318,7 @@
                 </h1>
 
                 <p class="reveal hero-desc text-lg lg:text-xl text-slate-500 mb-12 max-w-2xl font-medium leading-relaxed" data-i18n="hero-desc">
-                    Registered Tax Return Preparer (RTRP) authorized for corporate and individual returns. All filings processed via secure, compliant paper submission protocols.
+                    Registered Tax Return Preparer (RTRP) authorized for corporate and individual returns. Delivering precise tax solutions with over 25 years of professional experience.
                 </p>
 
                 <div class="reveal flex flex-col md:flex-row gap-5">
@@ -393,7 +377,7 @@
                         </svg>
                     </div>
                     <h4 class="text-2xl font-black mb-4 text-slate-900" data-i18n="srv-corp-t">Corporate Filings</h4>
-                    <p class="text-slate-500 text-lg leading-relaxed font-medium" data-i18n="srv-corp-d">Expert preparation for S-Corps, LLCs, and small business paper filings following federal guidelines.</p>
+                    <p class="text-slate-500 text-lg leading-relaxed font-medium" data-i18n="srv-corp-d">Expert preparation for S-Corps, LLCs, and small business filings following current federal tax guidelines.</p>
                 </div>
 
                 <!-- Individual Returns -->
@@ -406,7 +390,7 @@
                         </svg>
                     </div>
                     <h4 class="text-2xl font-black mb-4 text-slate-900" data-i18n="srv-ind-t">Individual 1040</h4>
-                    <p class="text-slate-500 text-lg leading-relaxed font-medium" data-i18n="srv-ind-d">Detailed individual return preparation focused on accuracy and complete regulatory compliance.</p>
+                    <p class="text-slate-500 text-lg leading-relaxed font-medium" data-i18n="srv-ind-d">Detailed individual return preparation focused on accuracy, deductions, and complete regulatory compliance.</p>
                 </div>
 
                 <!-- Security/IRS Compliance -->
@@ -418,7 +402,7 @@
                         </svg>
                     </div>
                     <h4 class="text-2xl font-black mb-4 text-slate-900" data-i18n="srv-sec-t">IRS Compliance</h4>
-                    <p class="text-slate-500 text-lg leading-relaxed font-medium" data-i18n="srv-sec-d">Physical document oversight ensuring all entries meet the strict standards of the IRS.</p>
+                    <p class="text-slate-500 text-lg leading-relaxed font-medium" data-i18n="srv-sec-d">Diligent oversight ensuring all filings meet the strict standards and updated requirements of the IRS.</p>
                 </div>
             </div>
         </div>
@@ -508,7 +492,7 @@
                 "hero-tag": "Registered Tax Return Preparer", 
                 "hero-title-1": "Professional Tax", 
                 "hero-title-2": "Preparation.",
-                "hero-desc": "Registered Tax Return Preparer (RTRP) authorized for corporate and individual returns. All filings processed via secure, compliant paper submission protocols.",
+                "hero-desc": "Registered Tax Return Preparer (RTRP) authorized for corporate and individual returns. Delivering precise tax solutions with over 25 years of professional experience.",
                 "learn-more": "Expertise & Services",
                 "btn-schedule": "Schedule Appointment",
                 "nav-portal": "Client Portal",
@@ -520,11 +504,11 @@
                 "highlight": "Consultation",
                 "sub-instr": "Select an available slot below to get started.",
                 "srv-corp-t": "Corporate Filings",
-                "srv-corp-d": "Expert preparation for S-Corps, LLCs, and small business paper filings following federal guidelines.",
+                "srv-corp-d": "Expert preparation for S-Corps, LLCs, and small business filings following current federal tax guidelines.",
                 "srv-ind-t": "Individual 1040",
-                "srv-ind-d": "Detailed individual return preparation focused on accuracy and complete regulatory compliance.",
+                "srv-ind-d": "Detailed individual return preparation focused on accuracy, deductions, and complete regulatory compliance.",
                 "srv-sec-t": "IRS Compliance",
-                "srv-sec-d": "Physical document oversight ensuring all entries meet the strict standards of the IRS.",
+                "srv-sec-d": "Diligent oversight ensuring all filings meet the strict standards and updated requirements of the IRS.",
                 "card-title": "Registered Tax Return Preparer", 
                 "card-email-label": "Professional Email", 
                 "card-office-label": "Office Line", 
@@ -532,7 +516,7 @@
                 "footer-gracias": "Thank you for visiting",
                 "footer-copy": "© 2026 VA Income Tax Service • All Rights Reserved",
                 "legal-header": "Legal Disclosures & Compliance",
-                "legal-disclaimer": "<p>Veronica Alcaraz is a Registered Tax Return Preparer (RTRP). The IRS does not endorse any particular individual tax return preparer.</p><p class='bg-slate-50 p-4 rounded-xl border-l-4 border-blue-500 mt-4'><strong class='text-slate-900'>PAPER FILING SPECIALIST:</strong> We specialize exclusively in paper filing preparation. We do not provide electronic submission (e-file) services. All returns are prepared for physical mailing.</p>"
+                "legal-disclaimer": "<p>Veronica Alcaraz is a Registered Tax Return Preparer (RTRP). The IRS does not endorse any particular individual tax return preparer.</p>"
             },
             es: {
                 "comp-efile": "Preparador Profesional RTRP desde 1996",
@@ -541,7 +525,7 @@
                 "hero-tag": "Preparador de Impuestos Registrado", 
                 "hero-title-1": "Preparación", 
                 "hero-title-2": "Fiscal Profesional.",
-                "hero-desc": "Preparador de Impuestos Registrado (RTRP) autorizado para declaraciones corporativas e individuales. Procesamiento mediante protocolos físicos seguros.",
+                "hero-desc": "Preparador de Impuestos Registrado (RTRP) autorizado para declaraciones corporativas e individuales. Brindando soluciones fiscales precisas con más de 25 años de experiencia profesional.",
                 "learn-more": "Experiencia y Servicios",
                 "btn-schedule": "Programar Cita",
                 "nav-portal": "Portal Clientes",
@@ -553,11 +537,11 @@
                 "highlight": "Consulta",
                 "sub-instr": "Seleccione un horario disponible para comenzar.",
                 "srv-corp-t": "Declaraciones Corporativas",
-                "srv-corp-d": "Preparación experta para S-Corps, LLCs y pequeñas empresas siguiendo las guías federales.",
+                "srv-corp-d": "Preparación experta para S-Corps, LLCs y pequeñas empresas siguiendo las guías fiscales federales vigentes.",
                 "srv-ind-t": "Formulario Individual 1040",
-                "srv-ind-d": "Preparación detallada de declaraciones individuales enfocada en precisión y cumplimiento total.",
+                "srv-ind-d": "Preparación detallada de declaraciones individuales enfocada en precisión, deducciones y cumplimiento total.",
                 "srv-sec-t": "Cumplimiento del IRS",
-                "srv-sec-d": "Supervisión de documentos físicos asegurando que cumplan los estándares del IRS.",
+                "srv-sec-d": "Supervisión diligente asegurando que todos los trámites cumplan con los estrictos estándares y requisitos del IRS.",
                 "card-title": "Preparador de Impuestos Registrado", 
                 "card-email-label": "Correo Profesional", 
                 "card-office-label": "Línea de Oficina", 
@@ -565,7 +549,7 @@
                 "footer-gracias": "Gracias por su visita",
                 "footer-copy": "© 2026 VA Income Tax Service • Todos los Derechos Reservados",
                 "legal-header": "Avisos Legales y Cumplimiento",
-                "legal-disclaimer": "<p>Verónica Alcaraz es una Preparadora de Impuestos Registrada (RTRP). El IRS no respalda a ningún preparador individual.</p><p class='bg-slate-50 p-4 rounded-xl border-l-4 border-blue-500 mt-4'><strong class='text-slate-900'>ESPECIALISTA EN PRESENTACIÓN FÍSICA:</strong> Nos especializamos exclusivamente en preparación para envío por correo. No ofrecemos servicios de e-file.</p>"
+                "legal-disclaimer": "<p>Verónica Alcaraz es una Preparadora de Impuestos Registrada (RTRP). El IRS no respalda a ningún preparador individual.</p>"
             }
         };
 
